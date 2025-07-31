@@ -1,63 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AlgoGenex - AI Agency</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://unpkg.com/scrollreveal"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AlgoGenex – AI Automation</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="hero">
-    <div class="container">
-      <h1 class="logo">AlgoGenex</h1>
-      <p class="slogan">Next-Gen Automation. Enterprise Precision</p>
-    </div>
-  </header>
 
-  <section class="services parallax">
-    <div class="container">
-      <h2>Servizi</h2>
-      <div class="service">
-        <h3>TURN LOST TRAFFIC INTO NEW REVENUE</h3>
-        <p>Sell more without increasing marketing expenses, and lower the cost of acquiring a new customer.</p>
-      </div>
-      <div class="service">
-        <h3>SELL MORE TO YOUR CURRENT CUSTOMERS</h3>
-        <p>Increase the lifetime value of every single customer, by upselling and cross-selling new products and driving additional purchases.</p>
-      </div>
-      <div class="service">
-        <h3>SELL MUCH FASTER</h3>
-        <p>Achieve faster, better, and more personal follow-up, that creates more happy customers at a higher conversion rate.</p>
-      </div>
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Next-Gen Automation.<br>Enterprise Precision</h1>
+      <p>We drive efficiency and growth with advanced AI-driven automation solutions.</p>
+      <a href="#contact" class="btn">Contact Us</a>
     </div>
   </section>
 
-  <section class="about">
-    <div class="container">
-      <h2>Chi Siamo</h2>
-      <p>AlgoGenex è un'agenzia specializzata in soluzioni di automazione AI per aziende moderne. Con un focus su efficienza, scalabilità e personalizzazione, aiutiamo i nostri clienti a vendere di più, più velocemente, e con maggiore precisione.</p>
+  <!-- Services Section -->
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="service-item slide-in">
+      <h3>TURN LOST TRAFFIC INTO NEW REVENUE</h3>
+      <p>Sell more without increasing marketing expenses, and lower the cost of acquiring a new customer.</p>
+    </div>
+    <div class="service-item slide-in">
+      <h3>SELL MORE TO YOUR CURRENT CUSTOMERS</h3>
+      <p>Increase the lifetime value of every single customer, by upselling and cross-selling new products and driving additional purchases.</p>
+    </div>
+    <div class="service-item slide-in">
+      <h3>SELL MUCH FASTER</h3>
+      <p>Achieve faster, better, and more personal follow-up, that creates more happy customers at a higher conversion rate.</p>
     </div>
   </section>
 
-  <section class="contact">
-    <div class="container">
-      <h2>Contatti</h2>
-      <form action="https://formspree.io/f/moqgdgzr" method="POST">
-        <input type="text" name="name" placeholder="Il tuo nome" required />
-        <input type="email" name="email" placeholder="Email" required />
-        <textarea name="message" placeholder="Messaggio" required></textarea>
-        <button type="submit">Invia</button>
-      </form>
-    </div>
+  <!-- About Us Section -->
+  <section id="about" class="slide-in">
+    <h2>About Us</h2>
+    <p>AlgoGenex is an AI agency focused on delivering next-generation automation solutions with enterprise-grade precision. Our expert team combines cutting-edge machine learning with industry experience to optimize workflows and drive growth.</p>
+    <p>We pride ourselves on tailored solutions that integrate seamlessly into your operations, maximizing efficiency and return on investment.</p>
   </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 AlgoGenex. Tutti i diritti riservati.</p>
-    </div>
-  </footer>
+  <!-- Contact Section -->
+  <section id="contact" class="slide-in">
+    <h2>Contact Us</h2>
+    <form action="https://formspree.io/f/yourFormID" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
 
+      <label for="email">Email</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <input type="submit" value="Send Message">
+    </form>
+    <p class="small">We’ll answer as soon as possible. (Form powered by Formspree)</p>
+  </section>
+
+  <!-- JavaScript for scroll animations -->
   <script src="script.js"></script>
 </body>
 </html>
