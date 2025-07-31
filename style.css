@@ -1,6 +1,9 @@
-body {
+/* style.css */
+
+html, body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
   font-family: 'Inter', sans-serif;
   color: #111;
   background-color: #fff;
@@ -18,8 +21,10 @@ body {
   background: #fff;
   border-bottom: 1px solid #eee;
   padding: 20px 0;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  width: 100%;
   z-index: 999;
 }
 
@@ -65,7 +70,7 @@ nav a {
 .hero {
   background: #f5f7ff;
   text-align: center;
-  padding: 100px 20px;
+  padding: 160px 20px 100px; /* Adjusted for fixed header */
 }
 
 .hero h1 {
