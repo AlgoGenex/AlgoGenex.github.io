@@ -53,7 +53,7 @@ nav .nav-links a:hover {
 .hero {
     text-align: center;
     padding: 100px 20px;
-    background: linear-gradient(135deg, #0A0A0A, #1A1A1A);
+    background: rgba(0,0,0,0.4);
 }
 .hero h1 {
     font-size: 3rem;
@@ -184,4 +184,11 @@ footer {
 }
 .slide-in-down {
     transform: translateY(-50px);
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
 }
