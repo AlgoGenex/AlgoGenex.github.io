@@ -1,37 +1,44 @@
-// Smooth scroll to anchor links
-const navLinks = document.querySelectorAll('nav a[href^="#"]');
+// script.js
 
-navLinks.forEach(link => {
-  link.addEventListener('click', function(e) {
-    e.preventDefault();
-    const targetId = this.getAttribute('href').substring(1);
-    const targetSection = document.getElementById(targetId);
-    if (targetSection) {
-      window.scrollTo({
-        top: targetSection.offsetTop - 60,
-        behavior: 'smooth'
-      });
-    }
-  });
+// Reveal animations
+ScrollReveal().reveal('.hero .logo', {
+  delay: 200,
+  duration: 1000,
+  origin: 'top',
+  distance: '50px'
 });
 
-// Fade-in animations on scroll
-const faders = document.querySelectorAll('.feature-box, .logo-row img, .cta, .demo-form');
+ScrollReveal().reveal('.slogan', {
+  delay: 400,
+  duration: 1000,
+  origin: 'bottom',
+  distance: '30px'
+});
 
-const appearOptions = {
-  threshold: 0.1,
-  rootMargin: "0px 0px -100px 0px"
-};
+ScrollReveal().reveal('.services h2', {
+  delay: 200,
+  duration: 1000,
+  origin: 'left',
+  distance: '30px'
+});
 
-const appearOnScroll = new IntersectionObserver(function(entries, observer) {
-  entries.forEach(entry => {
-    if (!entry.isIntersecting) return;
-    entry.target.classList.add('appear');
-    observer.unobserve(entry.target);
-  });
-}, appearOptions);
+ScrollReveal().reveal('.service', {
+  interval: 200,
+  duration: 1000,
+  origin: 'bottom',
+  distance: '40px'
+});
 
-faders.forEach(fader => {
-  fader.classList.add('fade-in');
-  appearOnScroll.observe(fader);
+ScrollReveal().reveal('.about h2, .about p', {
+  delay: 300,
+  duration: 1000,
+  origin: 'right',
+  distance: '40px'
+});
+
+ScrollReveal().reveal('.contact h2, form', {
+  delay: 300,
+  duration: 1000,
+  origin: 'bottom',
+  distance: '40px'
 });
