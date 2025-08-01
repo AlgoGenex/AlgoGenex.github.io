@@ -18,3 +18,13 @@ document.addEventListener('DOMContentLoaded', function() {
     );
     elements.forEach(el => observer.observe(el));
 });
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const nav = document.getElementById('navbar');
+  const updateNavHeight = () => {
+    document.documentElement.style.setProperty('--nav-height', nav.offsetHeight + 'px');
+  };
+  updateNavHeight();
+  window.addEventListener('resize', updateNavHeight);
+});
