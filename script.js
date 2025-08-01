@@ -1,7 +1,5 @@
 /* script.js */
 // IntersectionObserver to add .show class when elements scroll into view
-/* script.js */
-// IntersectionObserver to add .show class when elements scroll into view
 document.addEventListener('DOMContentLoaded', function() {
     const observerOptions = {
         threshold: 0.3
