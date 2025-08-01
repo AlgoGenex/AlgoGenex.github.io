@@ -90,7 +90,6 @@ html, body {
   opacity: 0;
   /* animations from your JS still apply */
 }
-
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
