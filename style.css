@@ -72,7 +72,7 @@ html, body {
   min-width: 100%;
   min-height: 100%;
   object-fit: cover;
-  object-position: center 20%; /* adjust vertical framing */
+  object-position: center 60%; /* adjust vertical framing */
   z-index: -1;
 }
 
