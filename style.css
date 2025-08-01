@@ -114,7 +114,7 @@ html, body {
     transition: background 0.3s;
 }
 .btn:hover {
-    background-color: #1370C1;
+    background-color: linear-gradient(135deg, #0A0A0A, #1A1A1A);
 }
 
 /* Section Titles */
