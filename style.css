@@ -12,7 +12,6 @@ html, body {
 }
 body {
     background-color: linear-gradient(90deg,rgba(0, 76, 117, 1) 0%, rgba(26, 26, 26, 1) 100%);
-    color: #E0E0E0;
     transition: background-color 0.3s ease;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
