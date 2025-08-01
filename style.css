@@ -20,24 +20,6 @@ a {
     text-decoration: none;
 }
 
-/* Scroll Container*/
-html, body {
-  height: 100%;
-  margin: 0;
-  overflow: hidden;
-}
-
-.scroll-container {
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
-
-.scroll-container section {
-  height: 100vh;
-  scroll-snap-align: start;
-}
-
 /* Navigation */
 nav {
     display: flex;
