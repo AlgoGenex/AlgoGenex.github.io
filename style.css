@@ -1,11 +1,19 @@
 /* style.css */
 /* Base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
 * {
     margin: 0; padding: 0; box-sizing: border-box;
 }
 body {
-    background-color: #121212;
+    background-color: linear-gradient(90deg,rgba(0, 76, 117, 1) 0%, rgba(26, 26, 26, 1) 100%);
     color: #E0E0E0;
+    transition: background-color 0.3s ease;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
 }
@@ -50,16 +58,6 @@ nav .nav-links a:hover {
 }
 
 /* Hero Section */
-html, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
-:root {
-  --nav-height: 80px; /* default fallback */
-}
 
 .hero {
   position: relative;
