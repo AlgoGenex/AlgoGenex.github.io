@@ -52,9 +52,25 @@ nav .nav-links a:hover {
 /* Hero Section */
 .hero {
   position: relative;
-  width: 100%;
-  height: calc(100vh - 80px); /* adjust if nav height differs */
   overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0; padding: 0;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-video-container {
@@ -65,22 +81,6 @@ nav .nav-links a:hover {
   background-size: cover;
   background-position: center;
   z-index: 0;
-}
-
-.hero-video {
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* video covers full container responsively */
-  z-index: -1;
-}
-
-.hero-content {
-  position: relative;
-  z-index: 1;
-  text-align: center;
-  padding: 100px 20px;
 }
 
 /* ensure text slides as before */
