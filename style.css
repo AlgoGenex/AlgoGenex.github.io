@@ -64,7 +64,7 @@ html, body {
 .hero {
   position: relative;
   width: 100%;
-  height: height: calc(100vh - var(--nav-height));
+  height: calc(100vh - var(--nav-height));
   overflow: hidden;
 }
 
