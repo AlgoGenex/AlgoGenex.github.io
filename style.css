@@ -188,12 +188,12 @@ html, body {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-image: conic-gradient(from var(--angle), transparent, transparent, white, transparent, transparent, transparent, transparent, transparent, white, transparent, transparent, transparent, transparent);
+  background-image: conic-gradient(from var(--angle), transparent, transparent, #008cff, transparent, transparent, transparent, transparent, transparent, #e100ff, transparent, transparent, transparent, transparent);
   top: 50%;
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  padding: 3px;
+  padding: 2px;
   border-radius: 10px;
   animation: 10s spin linear infinite;
 }
