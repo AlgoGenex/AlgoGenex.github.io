@@ -238,6 +238,10 @@ html, body {
 }
 
 /* About */
+.about{
+    background-image: url('assets/background_about.jpg');
+}
+
 .about p {
     max-width: 800px;
     margin: 0 auto;
