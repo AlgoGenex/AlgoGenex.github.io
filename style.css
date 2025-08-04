@@ -166,6 +166,10 @@ html, body {
 }
 
 /* Services */
+.services {
+  background: url('assets/background_services');
+}
+
 .services-grid {
     display: flex;
     flex-wrap: wrap;
