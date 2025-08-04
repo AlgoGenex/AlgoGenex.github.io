@@ -27,7 +27,7 @@ nav {
     align-items: center;
     padding: 20px;
     position: sticky; top: 0;
-    background: rgba(18,18,18,0.95);
+    background: linear-gradient(90deg,rgba(0, 0, 0, 1) 0%, rgba(38, 38, 38, 1) 99%);
     z-index: 1000;
 }
 nav .logo {
