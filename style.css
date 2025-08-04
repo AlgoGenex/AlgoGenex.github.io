@@ -167,7 +167,7 @@ html, body {
 
 /* Services */
 .services {
-  background: linear-gradient(to bottom right,rgba(0, 0, 0, 1) 0%, rgba(38, 38, 38, 1));
+  background: linear-gradient(to bottom right,rgba(0, 0, 0, 1) 0%, rgba(38, 38, 38, 1) 100%);
 }
 
 .services-grid {
@@ -256,6 +256,10 @@ html, body {
 }
 
 /* Contact */
+.contact {
+  background: linear-gradient(to bottom right,rgba(0, 0, 0, 1) 0%, rgba(38, 38, 38, 1) 100%);
+}
+
 .contact form {
     max-width: 600px;
     margin: 20px auto;
