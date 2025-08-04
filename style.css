@@ -167,7 +167,7 @@ html, body {
 
 /* Services */
 .services {
-  background: url('assets/background_services.jpg');
+  background: linear-gradient(to bottom right,rgba(0, 0, 0, 1) 0%, rgba(38, 38, 38, 1));
 }
 
 .services-grid {
