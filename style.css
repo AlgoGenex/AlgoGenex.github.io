@@ -34,6 +34,12 @@ nav .logo {
     font-size: 1.5rem;
     font-weight: 700;
 }
+nav .logo::after {
+    content:'Genex';
+    background-image: linear-gradient(to bottom right, #008cff , #e100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 nav .nav-links {
     list-style: none;
 }
@@ -96,6 +102,12 @@ html, body {
 .hero h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+}
+.hero h1::after {
+    content:'Genex';
+    background-image: linear-gradient(to bottom right, #008cff , #e100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 .hero .slogan {
     font-size: 1.2rem;
