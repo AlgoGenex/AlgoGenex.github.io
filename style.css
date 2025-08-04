@@ -30,7 +30,7 @@ nav {
     z-index: 1000;
 
     position: relative;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/background_about.jpg');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/background_navbar.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
