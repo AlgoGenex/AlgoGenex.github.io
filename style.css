@@ -54,7 +54,7 @@ nav .nav-links a {
 nav .nav-links a:hover {
     background-image: linear-gradient(to bottom right, #008cff , #e100ff);
     border-radius: 1000px;
-    padding: 10px;
+    padding: 5px;
     transition: 0.6s ease;
 }
 
