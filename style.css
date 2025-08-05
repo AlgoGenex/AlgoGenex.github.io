@@ -1,21 +1,13 @@
 /* style.css */
 /* Base styles */
 * {
-    margin: 0; padding: 0; box-sizing: border-box;
+    margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth;
 }
 body {
     background-color: #121212;
     color: #E0E0E0;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
 }
 
 .section {
