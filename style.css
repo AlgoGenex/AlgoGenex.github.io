@@ -106,7 +106,7 @@ nav .nav-links a:hover {
   /* animations from your JS still apply */
 }
 .hero h1 {
-    font-size: clamp(3rem, 6vw, 4.5rem);
+    font-size: clamp(3rem, 4rem);
     margin-bottom: 20px;
 }
 .hero h1::after {
