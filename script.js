@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }, observerOptions);
 
     const elements = document.querySelectorAll(
-        '.service-item, .about p, .contact form, .contact-info, .hero h1, .hero .slogan, .btn, .section-title'
+        '.service-item, .about p, .contact p, .contact form, .contact-info, .hero h1, .hero .slogan, .btn, .section-title'
     );
 
     elements.forEach(el => {
