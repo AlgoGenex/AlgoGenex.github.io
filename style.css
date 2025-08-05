@@ -76,6 +76,7 @@ html, body {
   align-items: center;
   z-index: 1;
   text-align: center;
+  padding: 2em;
 }
 
 .hero-video {
@@ -97,16 +98,16 @@ html, body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 0 150px;
+  padding: 0 20px;
   text-align: center;
   background: radial-gradient(
-    ellipse, 
+    circle, 
     rgba(0, 0, 0, 0.6) 40%, 
-    rgba(0, 0, 0, 0.0) 100%
+    rgba(0, 0, 0, 0.4) 100%
   );
-  box-shadow: 0 0 40px 100px rgba(0, 0, 0, 0.2);
-  border-radius: 200px;
-  max-width: 100%;
+  box-shadow: 0 0 50px 50px rgba(0, 0, 0, 0.5);
+  border-radius: 1000px;
+  max-width: 20%;
 }
 
 .hero-content h1,
