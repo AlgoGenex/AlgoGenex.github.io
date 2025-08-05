@@ -262,6 +262,10 @@ html, body {
   background: black;
 }
 
+.contact p {
+  text-align: center;
+}
+
 .contact form {
     max-width: 600px;
     margin: 20px auto;
