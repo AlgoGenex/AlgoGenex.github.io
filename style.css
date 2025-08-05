@@ -9,6 +9,15 @@ body {
     font-family: 'Montserrat', sans-serif;
     line-height: 1.6;
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 .section {
     padding: 60px 20px;
 }
@@ -59,13 +68,6 @@ nav .nav-links a:hover {
 }
 
 /* Hero Section */
-html, body {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
-
 .hero {
   position: relative;
   width: 100%;
