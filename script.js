@@ -31,14 +31,3 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
-
-window.addEventListener('load', () => {
-  const video = document.querySelector('.hero-video');
-  if (video.readyState >= 3) {
-    video.removeAttribute('poster');
-  } else {
-    video.addEventListener('canplaythrough', () => {
-      video.removeAttribute('poster');
-    });
-  }
-});
