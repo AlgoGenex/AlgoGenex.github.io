@@ -161,6 +161,27 @@ nav .nav-links a:hover {
    box-shadow: 10px 0 100px #008cff85 , -10px 0 100px #e100ffbb;
 }
 
+@media screen and (min-width: 768px) {
+  .hero-content {
+    max-width: 700px; /* or 60%, adjust as needed */
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .hero-content h1 {
+    font-size: 4rem;
+  }
+
+  .hero-content .slogan {
+    font-size: 2rem;
+  }
+
+  .hero-content .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
 /* Section Titles */
 .section-title {
     font-size: 2rem;
