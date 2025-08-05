@@ -71,6 +71,11 @@ html, body {
   width: 100%;
   height: calc(100vh - 80px);
   overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  text-align: center;
 }
 
 .hero-video {
@@ -92,8 +97,16 @@ html, body {
   justify-content: center;
   align-items: center;
   height: 100%;
-  padding: 0 20px;
+  padding: 0 150px;
   text-align: center;
+  background: radial-gradient(
+    ellipse, 
+    rgba(0, 0, 0, 0.6) 40%, 
+    rgba(0, 0, 0, 0.0) 100%
+  );
+  box-shadow: 0 0 40px 100px rgba(0, 0, 0, 0.2);
+  border-radius: 200px;
+  max-width: 100%;
 }
 
 .hero-content h1,
