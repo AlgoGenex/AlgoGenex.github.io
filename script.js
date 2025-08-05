@@ -1,6 +1,6 @@
 /* script.js */
 // IntersectionObserver to add .show class when elements scroll into view
-document.addEventListener('DOMContentLoaded', function () {
+window.addEventListener('load', function () {
     const observerOptions = {
         threshold: 0.3
     };
@@ -9,19 +9,19 @@ document.addEventListener('DOMContentLoaded', function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('show');
-                obs.unobserve(entry.target); // Only animate once
+                obs.unobserve(entry.target); // animate only once
             }
         });
     }, observerOptions);
 
     const elements = document.querySelectorAll(
-        '.service-item, .about p, .contact p, .contact form, .contact-info, .hero h1, .hero .slogan, .btn, .section-title'
+        '.service-item, .about p, .contact form, .contact-info, .hero h1, .hero .slogan, .btn, .section-title, .fade-in'
     );
 
     elements.forEach(el => {
         observer.observe(el);
 
-        // Check if element is already in view on load
+        // Check visibility on full load
         const rect = el.getBoundingClientRect();
         const isVisible = rect.top < window.innerHeight && rect.bottom >= 0;
 
