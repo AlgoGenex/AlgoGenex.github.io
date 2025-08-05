@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
     }, observerOptions);
 
     const elements = document.querySelectorAll(
-        '.service-item, .about p, .contact form, .contact-info, .hero h1, .hero .slogan, .btn, .section-title, .fade-in'
+        '.service-item, .about p, .contact p, .contact form, .contact-info, .hero h1, .hero .slogan, .btn, .section-title, .fade-in'
     );
 
     elements.forEach(el => {
