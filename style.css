@@ -332,6 +332,6 @@ footer {
 
 .show {
     opacity: 1;
-    transition: opacity 2s ease-out, transform 2s ease-out, filter 2s ease-out;
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out, filter 0.8s ease-out;
     filter: blur(0px);
 }
