@@ -354,22 +354,78 @@ nav .nav-links a:hover {
 }
 
 /* Footer */
-footer {
+.site-footer {
   background-color: #0a0a0a;
-  color: #ccc;
-  text-align: center;
-  padding: 20px;
-  font-size: 0.9rem;
+  color: #f3f3f3;
+  padding: 40px 20px 20px;
+  border-top: 1px solid #222;
+  font-size: 0.85rem;
 }
 
-footer a {
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer-left {
+  flex: 2;
+  min-width: 250px;
+}
+
+.footer-left h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  color: #bbbbbb;
+  line-height: 1.4;
+  max-width: 400px;
+}
+
+.footer-right {
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  gap: 40px;
+  min-width: 250px;
+}
+
+.footer-column {
+  min-width: 120px;
+}
+
+.footer-column h4 {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.footer-column p {
+  margin: 0;
+}
+
+.footer-column a {
   color: #7fc9ff;
   text-decoration: none;
-  margin-left: 10px;
 }
 
-footer a:hover {
+.footer-column a:hover {
   text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333;
+  padding-top: 15px;
+  margin-top: 30px;
+  font-size: 0.75rem;
+  color: #888888;
 }
 
 /* Animation classes (added by JS) */
