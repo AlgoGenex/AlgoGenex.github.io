@@ -265,6 +265,10 @@ nav .nav-links a:hover {
 
 /* FAQs */
 .faq-section {
+  background: black;
+}
+
+.faq-container {
   padding: 4rem 1rem;
   max-width: 800px;
   margin: 0 auto;
