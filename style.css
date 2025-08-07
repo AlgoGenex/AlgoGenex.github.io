@@ -302,6 +302,7 @@ nav .nav-links a:hover {
   padding: 0 1rem 1rem;
   display: none;
   color: #ccc;
+  margin-top: 15px;
 }
 
 .faq-answer ul {
