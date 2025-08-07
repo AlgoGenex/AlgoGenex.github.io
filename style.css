@@ -247,7 +247,7 @@ nav .nav-links a:hover {
 /* About */
 .about{
     position: relative;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/background_about.webp');
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/section_1_background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -312,7 +312,7 @@ nav .nav-links a:hover {
 
 /* Contact */
 .contact {
-  background: black;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/section_2_background.webp');
 }
 
 .contact p {
