@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // List of all animatable elements
   const elements = document.querySelectorAll(
-    '.service-item, .about p, .contact p, .contact form, .contact-info, .hero h1, .hero .slogan, .btn, .section-title, .fade-in'
+    '.service-item, .about p, faq-container, .contact p, .contact form, .contact-info, .hero h1, .hero .slogan, .btn, .section-title, .fade-in'
   );
 
   elements.forEach(el => {
