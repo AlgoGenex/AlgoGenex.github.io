@@ -312,7 +312,7 @@ nav .nav-links a:hover {
 
 /* Contact */
 .contact {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/section_2_background.webp');
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/section_1_background.webp');
 }
 
 .contact p {
