@@ -355,10 +355,21 @@ nav .nav-links a:hover {
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.9rem;
-    background: #0D0D0D;
+  background-color: #0a0a0a;
+  color: #ccc;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #7fc9ff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 /* Animation classes (added by JS) */
