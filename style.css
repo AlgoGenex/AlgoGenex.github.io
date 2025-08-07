@@ -291,7 +291,7 @@ nav .nav-links a:hover {
   background-color: #111;
   transition: background 0.3s;
   border-radius: 200px;
-  border-bottom: 1px solid #333;
+  margin-top: 15px;
 }
 
 .faq-question:hover {
