@@ -202,35 +202,6 @@
             Oppure invia una mail a <a href="mailto:algogenex@gmail.com">algogenex@gmail.com</a>.
         </p>
     </section>
-
-    <script>
-      document.getElementById("contact-form").addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent page reload
-    
-        const form = e.target;
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
-    
-        fetch("https://hook.eu2.make.com/bcuqdo8y6zvadbjc9q4bc3jogk3im5pm", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        })
-          .then((res) => {
-            if (res.ok) {
-              document.getElementById("form-status").textContent = "Messaggio inviato con successo!";
-              form.reset();
-            } else {
-              document.getElementById("form-status").textContent = "C'è stato un errore nell'invio del tuo messaggio.";
-            }
-          })
-          .catch(() => {
-            document.getElementById("form-status").textContent = "Errore di connessione. Prova di nuovo.";
-          });
-      });
-    </script>
     
     <!-- Footer (optional) -->
     <footer class="site-footer">
