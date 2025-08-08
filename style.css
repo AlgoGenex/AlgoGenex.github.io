@@ -370,6 +370,15 @@ nav .nav-links a:hover {
     transition: all 0.6s ease-out;
 }
 
+.contact-info a {
+  color: #7fc9ff;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 .site-footer {
   background-color: #0a0a0a;
