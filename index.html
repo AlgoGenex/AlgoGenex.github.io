@@ -204,31 +204,43 @@
     </section>
 
     <script>
-      document.getElementById("contact-form").addEventListener("submit", function (e) {
-        e.preventDefault(); // Prevent page reload
+      window.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contact-form");
     
-        const form = e.target;
-        const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
     
-        fetch("https://hook.eu2.make.com/bcuqdo8y6zvadbjc9q4bc3jogk3im5pm", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(data),
-        })
-          .then((res) => {
-            if (res.ok) {
-              document.getElementById("form-status").textContent = "Message sent successfully!";
-              form.reset();
-            } else {
-              document.getElementById("form-status").textContent = "There was an error sending your message.";
-            }
+          const name = form.name.value.trim();
+          const email = form.email.value.trim();
+          const message = form.message.value.trim();
+    
+          // Basic client-side validation
+          if (!name || !email || !message) {
+            document.getElementById("form-status").textContent = "Please fill in all fields.";
+            return;
+          }
+    
+          const data = { name, email, message };
+    
+          fetch("https://hook.eu2.make.com/bcuqdo8y6zvadbjc9q4bc3jogk3im5pm", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
           })
-          .catch(() => {
-            document.getElementById("form-status").textContent = "Network error. Try again.";
-          });
+            .then((res) => {
+              if (res.ok) {
+                document.getElementById("form-status").textContent = "Message sent successfully!";
+                form.reset();
+              } else {
+                document.getElementById("form-status").textContent = "Error sending message.";
+              }
+            })
+            .catch(() => {
+              document.getElementById("form-status").textContent = "Network error.";
+            });
+        });
       });
     </script>
     
