@@ -175,7 +175,7 @@ nav .nav-links a:hover {
 
 /* Services */
 .services {
-    background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), linear-gradient(to bottom right, #008cff , #e100ff);
+    background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.8)), linear-gradient(to bottom right, #008cff , #e100ff);
 }
 
 .services-grid {
@@ -248,7 +248,7 @@ nav .nav-links a:hover {
 /* About */
 .about{
     position: relative;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/section_2_background.webp');
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/section_2_background.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -266,7 +266,7 @@ nav .nav-links a:hover {
 
 /* FAQs */
 .faq-section {
-  background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.8)), linear-gradient(to bottom right, #008cff , #e100ff);
+  background: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.8)), linear-gradient(to bottom right, #008cff , #e100ff);
 }
 
 .faq-container {
@@ -313,7 +313,7 @@ nav .nav-links a:hover {
 
 /* Contact */
 .contact {
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('assets/section_2_background.webp');
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/section_2_background.webp');
 }
 
 .contact p {
