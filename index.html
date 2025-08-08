@@ -204,44 +204,33 @@
     </section>
 
     <script>
-      window.addEventListener("DOMContentLoaded", function () {
-        const form = document.getElementById("contact-form");
-    
         form.addEventListener("submit", function (e) {
           e.preventDefault();
-    
+        
           const name = form.name.value.trim();
           const email = form.email.value.trim();
           const message = form.message.value.trim();
-    
-          // Basic client-side validation
+        
           if (!name || !email || !message) {
             document.getElementById("form-status").textContent = "Please fill in all fields.";
             return;
           }
-    
-          const data = { name, email, message };
-    
+        
           fetch("https://hook.eu2.make.com/bcuqdo8y6zvadbjc9q4bc3jogk3im5pm", {
             method: "POST",
             headers: {
-              "Content-Type": "application/json",
+              "Content-Type": "application/json"
             },
-            body: JSON.stringify(data),
+            body: JSON.stringify({ name, email, message })
           })
-            .then((res) => {
-              if (res.ok) {
-                document.getElementById("form-status").textContent = "Message sent successfully!";
-                form.reset();
-              } else {
-                document.getElementById("form-status").textContent = "Error sending message.";
-              }
-            })
-            .catch(() => {
-              document.getElementById("form-status").textContent = "Network error.";
-            });
+          .then(() => {
+            document.getElementById("form-status").textContent = "Message sent!";
+            form.reset();
+          })
+          .catch(() => {
+            document.getElementById("form-status").textContent = "Something went wrong.";
+          });
         });
-      });
     </script>
     
     <!-- Footer (optional) -->
