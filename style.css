@@ -289,7 +289,7 @@ nav .nav-links a:hover {
   font-weight: bold;
   cursor: pointer;
   color: #fff;
-  background-color: #111;
+  background-color: black;
   transition: background 0.3s;
   border-radius: 200px;
   margin-top: 15px;
