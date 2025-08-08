@@ -204,30 +204,32 @@
     </section>
 
     <script>
-        document.getElementById("contact-form").addEventListener("submit", function (e) {
-          e.preventDefault();
-        
-          const formData = new FormData(this);
-          const data = {
-            name: formData.get("name"),
-            email: formData.get("email"),
-            message: formData.get("message"),
-          };
-        
-          fetch("https://hook.eu2.make.com/bcuqdo8y6zvadbjc9q4bc3jogk3im5pm", {
-            method: "POST",
-            headers: {
-              "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data),
+      document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent page reload
+    
+        const form = e.target;
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+    
+        fetch("https://hook.eu2.make.com/bcuqdo8y6zvadbjc9q4bc3jogk3im5pm", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((res) => {
+            if (res.ok) {
+              document.getElementById("form-status").textContent = "Message sent successfully!";
+              form.reset();
+            } else {
+              document.getElementById("form-status").textContent = "There was an error sending your message.";
+            }
           })
-            .then(() => {
-              // Show confirmation, etc.
-            })
-            .catch((error) => {
-              console.error("Error:", error);
-            });
-        });
+          .catch(() => {
+            document.getElementById("form-status").textContent = "Network error. Try again.";
+          });
+      });
     </script>
     
     <!-- Footer (optional) -->
