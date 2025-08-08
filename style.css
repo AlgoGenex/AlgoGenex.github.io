@@ -166,6 +166,16 @@ nav .nav-links a:hover {
    box-shadow: 10px 0 100px #008cff85 , -10px 0 100px #e100ffbb;
 }
 
+.fade-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 150px; /* Adjust height based on how gradual you want the fade */
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, black 100%);
+  z-index: 3;
+}
+
 /* Section Titles */
 .section-title {
     font-size: 2rem;
