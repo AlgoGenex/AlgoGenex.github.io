@@ -56,11 +56,11 @@ nav .logo::after {
 }
 nav .nav-links {
     list-style: none;
-    white-space: nowrap;
 }
 nav .nav-links li {
     display: inline;
     margin-left: 20px;
+    white-space: nowrap;
 }
 nav .nav-links a {
     font-weight: 500;
