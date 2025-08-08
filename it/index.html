@@ -202,6 +202,45 @@
             Oppure invia una mail a <a href="mailto:algogenex@gmail.com">algogenex@gmail.com</a>.
         </p>
     </section>
+
+    <script>
+      document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent page reload
+    
+        const form = e.target;
+        const formData = new FormData(form);
+        const name = formData.get("name")?.trim();
+        const email = formData.get("email")?.trim();
+        const message = formData.get("message")?.trim();
+    
+        // Simple validation
+        if (!name || !email || !message) {
+          document.getElementById("form-status").textContent = "Please fill in all fields.";
+          return;
+        }
+    
+        const data = { name, email, message };
+    
+        fetch("https://hook.eu2.make.com/jbifdk45hucp8jzkd552mcpktq9j27cc", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((res) => {
+            if (res.ok) {
+              document.getElementById("form-status").textContent = "Message sent successfully!";
+              form.reset();
+            } else {
+              document.getElementById("form-status").textContent = "There was an error sending your message.";
+            }
+          })
+          .catch(() => {
+            document.getElementById("form-status").textContent = "Network error. Try again.";
+          });
+      });
+    </script>
     
     <!-- Footer (optional) -->
     <footer class="site-footer">
