@@ -185,7 +185,7 @@
     <section id="contact" class="section contact">
         <h2 class="section-title slide-in-up">Contact Us</h2>
         <p class="slide-in-up">Ready to optimize your marketing and sales with AI? Get in touch:</p>
-        <form action="https://hook.eu2.make.com/bcuqdo8y6zvadbjc9q4bc3jogk3im5pm" method="POST" class="slide-in-up">
+        <form id="contact-form" class="slide-in-up">
             <label for="name">Name</label>
             <input type="text" id="name" name="name" required>
 
@@ -196,12 +196,42 @@
             <textarea id="message" name="message" rows="4" required></textarea>
 
             <button type="submit" class="btn">Send Message</button>
+            <p id="form-status"></p>
         </form>
         <p class="contact-info slide-in-up">
             Or email us at <a href="mailto:algogenex@gmail.com">algogenex@gmail.com</a>.
         </p>
     </section>
 
+    <script>
+      document.getElementById("contact-form").addEventListener("submit", function (e) {
+        e.preventDefault(); // Prevent page reload
+    
+        const form = e.target;
+        const formData = new FormData(form);
+        const data = Object.fromEntries(formData.entries());
+    
+        fetch("https://hook.eu2.make.com/bcuqdo8y6zvadbjc9q4bc3jogk3im5pm", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((res) => {
+            if (res.ok) {
+              document.getElementById("form-status").textContent = "Message sent successfully!";
+              form.reset();
+            } else {
+              document.getElementById("form-status").textContent = "There was an error sending your message.";
+            }
+          })
+          .catch(() => {
+            document.getElementById("form-status").textContent = "Network error. Try again.";
+          });
+      });
+    </script>
+    
     <!-- Footer (optional) -->
     <footer class="site-footer">
       <div class="footer-content">
