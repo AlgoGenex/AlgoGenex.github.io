@@ -109,7 +109,6 @@ nav .nav-links a:hover {
   display: none;
   position: absolute;
   background-color: white;
-  min-width: 100px;
   border: 1px solid #ccc;
   border-radius: 4px;
   z-index: 1;
