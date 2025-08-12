@@ -13,22 +13,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <script>
-        (function() {
-          // Ottieni la lingua principale del browser (es. "it", "en", "fr")
-          var userLang = navigator.language || navigator.userLanguage;
-          userLang = userLang.toLowerCase();
-        
-          // Se inizia con "it" (italiano)
-          if (userLang.startsWith("it")) {
-            // Evita loop di redirect se già sul sito italiano
-            if (!location.hostname.includes("algogenex.it") && 
-                !location.hostname.startsWith("it.")) {
-              window.location.href = "https://algogenex.it";
-            }
-          }
-        })();
-    </script>
 </head>
 <body>
     <!-- Navigation (logo/name and anchor links) -->
