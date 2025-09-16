@@ -1,12 +1,19 @@
 <style>
-body {
+html, body {
   margin: 0; /* remove browser’s default margin */
   padding: 0;
+  box-sizing: border-box;
+  font-size: 16px; /* normalize rem/em sizing */
   background-image: url('/demo/voltest_homepage.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;
 }
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
 </style>
 
 <link href="https://www.algogenex.com/n8n-chat-styles/style_voltest.css" rel="stylesheet" />
