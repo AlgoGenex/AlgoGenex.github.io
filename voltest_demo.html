@@ -9506,6 +9506,10 @@ html, body {
 <script type="module">
 	import { createChat } from 'https://www.algogenex.com/n8n-chat-styles/script.js';
 
+	// Generate or retrieve a persistent session ID
+	const sid = localStorage.getItem('n8nChatSid') || crypto.randomUUID();
+	localStorage.setItem('n8nChatSid', sid);
+
 	createChat({
          webhookUrl: 'https://n8n.algogenex.com/webhook/e0f5234e-f4ae-4971-9435-a39f576cfe86/chat',
          webhookConfig: {
@@ -9516,8 +9520,8 @@ html, body {
          mode: 'window',
          chatInputKey: 'chatInput',
          chatSessionKey: 'sessionId',
-         loadPreviousSession: true,
-         metadata: {},
+         loadPreviousSession: false,
+         metadata: { sessionId: sid },
          showWelcomeScreen: false,
          defaultLanguage: 'en',
          initialMessages: [
