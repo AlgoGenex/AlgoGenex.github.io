@@ -636,21 +636,30 @@ var ajax_var = {"url":"https:\/\/effeunocardetailing.it\/wp-admin\/admin-ajax.ph
 			
 		</div>
 
-<iframe id="n8n-chat-iframe"
-        style="position:fixed;bottom:20px;right:20px;width:360px;height:600px;
-               z-index:2147483647;border:none;overflow:hidden;"
-        srcdoc="
-  <!DOCTYPE html>
-  <html>
-    <head>
-      <link rel='stylesheet' href='https://www.algogenex.com/n8n-chat-styles/style_voltest.css'>
-    </head>
-    <body>
-      <div id='n8n-chat'></div>
-      <script type='module' src='https://www.algogenex.com/n8n-chat-styles/chatbot_effeuno.js'></script>
-    </body>
-  </html>
-"></iframe>
+<script>
+  (function () {
+    const iframe = document.createElement("iframe");
+    iframe.style.cssText = "position:fixed;bottom:20px;right:20px;width:360px;height:600px;z-index:2147483647;border:none;overflow:hidden;";
+    document.body.appendChild(iframe);
+
+    const doc = iframe.contentDocument || iframe.contentWindow.document;
+    doc.open();
+    doc.write(`
+      <!DOCTYPE html>
+      <html>
+        <head>
+          <meta charset="UTF-8">
+          <link rel="stylesheet" href="https://www.algogenex.com/n8n-chat-styles/style_voltest.css">
+        </head>
+        <body style="margin:0">
+          <div id="n8n-chat"></div>
+          <script type="module" src="https://www.algogenex.com/n8n-chat-styles/chatbot_effeuno.js"><\/script>
+        </body>
+      </html>
+    `);
+    doc.close();
+  })();
+</script>
 		
 		<!-- / Cookie Notice plugin -->	</body>
 </html>
